@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #1f1f1f;
+  --primary: #3D9991;
+  --accent: #3D9991;
+  --link: #3D9991;
+  --header-bg: transparent;
+  --footer-bg: #333333;
+  --footer-text: #ffffff;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-white text-foreground;
+    font-family: 'Proxima Nova', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom font imports */
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://use.typekit.net/af/3888dc/00000000000000007735e606/31/l?subset_id=2&fvd=n3&v=3') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://use.typekit.net/af/d7ff92/00000000000000007735e609/31/l?subset_id=2&fvd=n4&v=3') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://use.typekit.net/af/5be242/00000000000000007735e603/31/l?subset_id=2&fvd=n7&v=3') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Heading font fallback */
+.font-heading {
+  font-family: 'Adobe Garamond Pro', Georgia, 'Times New Roman', serif;
+}
+
+/* Navigation styles */
+.nav-link {
+  @apply text-xs font-bold uppercase tracking-wider text-white hover:text-gray-200 transition-colors;
+}
+
+/* Hero overlay */
+.hero-overlay {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.2) 100%);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
