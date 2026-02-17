@@ -12,6 +12,7 @@ const config: Config = {
         "primary": "#3D9991",
         "accent": "#3D9991",
         "background": "#1F1F1F",
+        "foreground": "#1F1F1F",
         "textPrimary": "#1F1F1F",
         "link": "#3D9991",
       },
