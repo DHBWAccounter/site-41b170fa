@@ -14,9 +14,6 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
   body {
     @apply bg-white text-foreground;
     font-family: 'Proxima Nova', system-ui, sans-serif;
